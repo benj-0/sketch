@@ -1,3 +1,10 @@
+let squares = document.querySelectorAll("div.square");
+    squares.forEach(function (i) {
+        i.addEventListener("mouseover", function () {
+            i.style.backgroundColor = "black";
+        });
+    });
+
 function sketchSquaresRainbow() {
     let squares = document.querySelectorAll("div.square");
     let colors = ["aqua", "black", "blue", "fuchsia", "gray", "green", "lime", "maroon", "navy", "olive", "orange", "purple", "red", "silver", "teal", "white", "yellow"];
@@ -19,8 +26,6 @@ function sketchSquares() {
         });
     });
 }
-
-sketchSquares();
 
 let squaresButton = document.getElementById("usersquares");
 squaresButton.addEventListener("click", function () {
