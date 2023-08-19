@@ -20,6 +20,8 @@ function sketchSquares() {
     });
 }
 
+sketchSquares();
+
 let squaresButton = document.getElementById("usersquares");
 squaresButton.addEventListener("click", function () {
     promptForSquares();
