@@ -9,7 +9,7 @@ function sketchSquaresRainbow() {
     let squares = document.querySelectorAll("div.square");
     let colors = ["aqua", "black", "blue", "fuchsia", "gray", "green", "lime", "maroon", "navy", "olive", "orange", "purple", "red", "silver", "teal", "white", "yellow"];
 
-    squares.forEach(function (i) {
+    squares.forEach(function (i) { 
         i.addEventListener("mouseover", function () {
             let randColor = colors[Math.floor(Math.random() * colors.length)];
             i.style.backgroundColor = `${randColor}`;
